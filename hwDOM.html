@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .header{
+            background-color: rgb(32, 153, 201);
+            color: white;
+            min-height: 100px;
+            text-align: left;
+            padding: 25px;
+            display:flex;
+            flex-flow:row;
+            align-items:center;
+            font-size: 25px;
+            
+        }
+        .title{
+            margin: 45px;
+            font-weight: bold;
+        }
+        .curse{
+            background:rgb(168, 168, 168);
+            color: black;
+            min-height: 100px;
+            margin:20px;
+            padding: 15px;
+            
+        }
+        .watchKit{
+            background-color: white;
+            color: black;
+            margin:20px;
+            margin-bottom: 0;
+            padding:5px;
+
+        }
+        .hello{
+            color: rgb(32, 153, 201);
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .social1{
+            background-color: orange;
+            min-height: 25px;
+            color: white;
+            font-weight: bold;
+            text-align: left;
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+    
+    <script>
+        var headerDiv = document.createElement('div');
+        headerDiv.setAttribute("class", "header");
+        headerDiv.innerHTML = "<h1 class=space>High On Coding</h1><p1 style = font-size:25px; class=title>Home</p1><p1>Categories</p1>";
+        var containerDiv = document.querySelector(".container");
+        containerDiv.append(headerDiv);
+
+        var curseDiv = document.createElement('div');
+        curseDiv.setAttribute("class", "curse");
+        curseDiv.innerHTML = "<h2> Curse of the Current Reviews</h2> <br>  When you want to buy any application from Apple ITunes store you have more choices than you can handle. Most of the users scroll past the application description completely avoiding it like ads displayed on the right column of your webpage. Their choice is dependent on three important factors price, screenshot and reviews.";
+        var containerDiv = document.querySelector(".container");
+        containerDiv.append(curseDiv);
+
+        var watchDiv = document.createElement('div');
+        watchDiv.setAttribute("class", "watchKit");
+        watchDiv.innerHTML = "<div class = hello >Hello WatchKit</div> <br> Last month Apple released the anticipated WatchKit Framework for developers in the form of iOs 8.2 beta SDK release. The WatchKit framework enable the developers to create Apple Watch application. In this article we are going to focus on the basics of getting started with the WatchKit framework and developing apps for the Apple Watch.";
+        var containerDiv = document.querySelector(".container");
+        containerDiv.append(watchDiv);
+
+        var socialbarDiv = document.createElement('div');
+        socialbarDiv.setAttribute("class", "social1");
+        socialbarDiv.innerHTML = "12 COMMENTS   124 LIKES";
+        var containerDiv = document.querySelector(".container");
+        containerDiv.append(socialbarDiv)
+
+        var introDiv = document.createElement('div');
+        introDiv.setAttribute("class", "watchKit");
+        introDiv.innerHTML = "<div class = hello >Inntroduction to Swift</div> <br> Swift is a modern programming  language developed by APPLE to create the next generation of iOS and OSX applications. Swift is a fairly new language and still in development but it clearly reflects the intentions and the future direction. This article will revolve around the basic concepts in the Swift language and how you can get started.";
+        var containerDiv = document.querySelector(".container");
+        containerDiv.append(introDiv);
+
+        var socialbarDiv = document.createElement('div');
+        socialbarDiv.setAttribute("class", "social1");
+        socialbarDiv.innerHTML = "15 COMMENTS    45 LIKES";
+        var containerDiv = document.querySelector(".container");
+        containerDiv.append(socialbarDiv)
+
+
+
+
+    </script>
+</body>
+</html>
